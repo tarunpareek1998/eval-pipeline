@@ -38,6 +38,7 @@ COPY deploy/ deploy/
 
 # Eval
 COPY eval/ eval/
+COPY tests_local/test_data/ tests_local/test_data/
 
 # Frontend static build from stage 1
 COPY --from=frontend-build /build/dist /app/static
